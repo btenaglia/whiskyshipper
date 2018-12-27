@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Oswald:300,400,500,600,700|Playfair+Display:400,400i,700,700i,900,900i');
+
+:root {
+  --font1: 'Lato', sans-serif;
+  --font2: 'Playfair Display', serif;
+  --font3: 'Oswald', sans-serif;
+
+  --light: 300;
+  --regular: 400;
+  --regulari: 400i;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --boldi: 700i;
+  --black: 900;
+  --blacki: 900i;
+
+  --blanco: #ffffff;
+  --grisclaro: #EEEEEE;
+  --grismedio: #BBBBBB;
+  --gris: #898989;
+  --negro: #231F20;
+  --dorado: #CE922E;
+  --crema: #F0D2A3;
+  --naranja: #EE9800;
+  --none: none;
+  --border: #504B4B;
+
+  --animacion: all 0.3s ease-in-out;
+}
+
+@custom-media --mobile (min-width: 320px);
+@custom-media --tabletport (min-width: 720px);
+@custom-media --tabletland (min-width: 1024px);
+@custom-media --desktop (min-width: 1200px);
+@custom-media --retina (-webkit-min-device-pixel-ratio: 2);
+
+@define-mixin MarginTopSection {
+  @media (--mobile) {
+    margin: 136px 0 0;
+  }
+  @media (--tabletport) {
+    margin: 249px 0 0;
+  }
+  @media (--tabletland) {
+    margin: 274px 0 0;
+  }
+  @media (--desktop) {
+    margin: 299px 0 0;
+  }
+}
+
+@define-mixin BtnSmall $Color , $Bg , $ColorHover , $BgHover{
+  display: block;
+  cursor: pointer;
+  float: left;
+  font-family: var(--font3);
+  font-weight: var(--regular);
+  line-height: 0.8;
+  color: $(Color);
+  letter-spacing: 0;
+  text-align: center;
+  background: $(Bg);
+  border: 1px solid $(Bg);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: var(--animacion);
+  @media (--mobile) {
+    font-size: 14px;
+    width: 100%;
+    padding: 12px 10px 13px;
+  }
+  @media (--tabletport) {
+    width: 120px;
+  }
+  @media (--tabletland) {
+    font-size: 15px;
+  }
+  @media (--desktop) {
+    font-size: 16px;
+    padding: 13px 10px 14px;
+  }
+  &:hover {
+    @media (--tabletland) {
+      background: $(BgHover);
+      color: $(ColorHover);
+    }
+  }
+}
+
+@define-mixin BtnSmallBorder $Color , $Bg , $Border  {
+  display: block;
+  cursor: pointer;
+  float: left;
+  font-family: var(--font3);
+  font-weight: var(--regular);
+  line-height: 0.8;
+  color: $(Color);
+  letter-spacing: 0;
+  text-align: center;
+  background: $(Bg);
+  border: 1px solid $(Border);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: var(--animacion);
+  @media (--mobile) {
+    font-size: 14px;
+    width: 100%;
+    padding: 12px 10px 13px;
+  }
+  @media (--tabletport) {
+    width: 120px;
+  }
+  @media (--tabletland) {
+    font-size: 15px;
+  }
+  @media (--desktop) {
+    font-size: 16px;
+    padding: 13px 10px 14px;
+  }
+  &:hover {
+    @media (--tabletland) {
+      opacity: 0.4;
+    }
+  }
+}
+
+@define-mixin ShoppingCartText {
+  width: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  @media (--mobile) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  @media (--tabletland) {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  @media (--desktop) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@define-mixin InputForm {
+  float: left;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  line-height: 0.8;
+  color: var(--gris);
+  font-weight: var(--light);
+  letter-spacing: 0;
+  border: 0 none;
+  border-bottom: 1px solid var(--grisclaro);
+  outline: none;
+  transition: var(--animacion);
+  @media (--mobile) {
+    font-size: 14px;
+    padding: 0 0 8px;
+  }
+  @media (--tabletland) {
+    font-size: 15px;
+    padding: 0 0 10px;
+  }
+  @media (--desktop) {
+    font-size: 16px;
+    padding: 0 0 12px;
+  }
+  &::placeholder {
+    color: var(--gris);
+    transition: var(--animacion);
+    @media (--mobile) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+    @media (--tabletport) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+    @media (--tabletland) {
+      font-size: 15px;
+      line-height: 25px;
+    }
+    @media (--desktop) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+  &:focus {
+    color: var(--negro);
+    border-bottom: 1px solid var(--naranja);
+    &::placeholder {
+      color: var(--negro);
+    }
+  }
+}
+
+@define-mixin CheckoutBox {
+  float: left;
+  width: 100%;
+  @media (--mobile) {
+    margin: 0 0 40px;
+  }
+  @media (--desktop) {
+    margin: 0 0 50px;
+  }
+}
+
+@define-mixin TextAboutUs {
+  @media (--mobile) {
+    font-size: 13px;
+    line-height: 19px;
+    text-align: left;
+  }
+  @media (--tabletland) {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
+  @media (--desktop) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}

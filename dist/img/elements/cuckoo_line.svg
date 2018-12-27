@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="1px" viewBox="0 0 90 1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>cuckoo_line</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="4500%" gradientTransform="translate(0.500000,0.000000),scale(0.011111,1.000000),rotate(180.000000),translate(-0.500000,-0.000000)" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="UiKit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <rect id="cuckoo_line" fill="url(#radialGradient-1)" x="0" y="0" width="90" height="1"></rect>
+    </g>
+</svg>

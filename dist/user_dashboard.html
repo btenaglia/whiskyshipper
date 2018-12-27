@@ -1,0 +1,607 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  	<head>
+	    <meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <title>Whisky International Online :: User Dashboard</title>
+
+      <meta name="author" content="Balloon - Product Design Team">
+      <meta name="copyright" content="Balloon - Product Design Team">
+      <meta name="description" content="Enganches con suspensión elástica diseñados para trabajos pesados, aplicables a todo tipo de Pick-up.">
+      <meta name="keywords" content="diseño grafico, diseño, desarrollo web, desarrollo mobile, desarrollo app, marketing digital, servicios marketing, comunicacion y marketing, servicio, google, seo, sem, servicio e commerce, servicio social media, maquetado mailings, trafico web y landing page">
+
+	    <link rel="shortcut icon" href="favicon.png" />
+
+      <link rel="stylesheet" href="css/style.css" />
+
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Oswald:300,400,500,600,700|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  	</head>
+  	<body>
+
+
+      <!-- BEGIN HEADER -->
+      <header>
+        <div class="row">
+          <div class="box">&nbsp;</div>
+          <div class="box">
+            <a href="#" id="logo_whisky">
+              <img src="img/logos/logo_whisky_international_online.svg" alt="Whisky Internationa Online" />
+            </a>
+          </div>
+          <div class="box">
+            <div class="interaction_top">
+              <button type="button" name="button">
+                <div class="icon">
+                  <img src="img/icon/icon_cart.svg" />
+                </div>
+                <div class="text">0</div>
+              </button>
+              <button id="btn_login" type="button" name="button">
+                <div class="icon">
+                  <img src="img/icon/icon_user.svg" />
+                </div>
+                <div class="text">Login</div>
+              </button>
+              <button type="button" name="button">
+                <div class="icon">
+                  <img src="img/icon/icon_bandera@2x.png" />
+                </div>
+                <div class="text">$ ARG</div>
+                <div class="arrow">
+                  <img src="img/icon/arrow_dropdown.svg" />
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <section id="box_nav">
+          <div class="row">
+            <div class="box">
+              <div id="btn_mobile">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <div class="btn_drop" id="btn_nav_whisky">Whisky</div>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Shipping & Insurance</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="box">
+              <div class="box_search">
+                <button type="button" name="button">
+                  <img src="img/icon/icon_search.svg" alt="Search Whisky">
+                </button>
+                <input placeholder="Search" type="text" name="" value="">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="list_nav" id="result_nav_whisky">
+          <div class="row">
+            <div class="box">
+              <div class="tittle_nav">Scotch Whisky</div>
+              <ul>
+                <li>
+                  <a href="#">Campbeltown Whisky</a>
+                </li>
+                <li>
+                  <a href="#">Highland Malt Whisky</a>
+                </li>
+                <li>
+                  <a href="#">Islay Malt Whisky</a>
+                </li>
+                <li>
+                  <a href="#">Lowland Malt Whisky</a>
+                </li>
+                <li>
+                  <a href="#">Speyside Malt Whisky</a>
+                </li>
+                <li>
+                  <a href="#">Blended Whisky</a>
+                </li>
+                <li>
+                  <a href="#">Pre-Owned Whisky</a>
+                </li>
+              </ul>
+            </div>
+            <div class="box">
+              <div class="tittle_nav">World Whisky</div>
+              <ul>
+                <li>
+                  <a href="#">American Whisky</a>
+                </li>
+                <li>
+                  <a href="#">Irish Whisky</a>
+                </li>
+                <li>
+                  <a href="#">Indian Whisky</a>
+                </li>
+                <li>
+                  <a href="#">Dutch Whisky</a>
+                </li>
+                <li>
+                  <a href="#">Japanese Whisky</a>
+                </li>
+                <li>
+                  <a href="#">New Zealand Whisky</a>
+                </li>
+                <li>
+                  <a href="#">Taiwanese Whisky</a>
+                </li>
+                <li>
+                  <a href="#">Welsh Whisky</a>
+                </li>
+                <li>
+                  <a href="#">Swedish Whiskyz</a>
+                </li>
+              </ul>
+            </div>
+            <div class="box">
+              <div class="tittle_nav">Collectable Whisky</div>
+              <ul>
+                <li>
+                  <a href="#">Old and Rare</a>
+                </li>
+                <li>
+                  <a href="#">Limited editions</a>
+                </li>
+                <li>
+                  <a href="#">Closed distilleries</a>
+                </li>
+                <li>
+                  <a href="#">Discontinued</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </header>
+      <!-- END HEADER -->
+      <!-- BEGIN BREADCRUMBS -->
+      <section id="box_breadcrumbs" class="user_page">
+        <div class="row">
+          <ul>
+            <li>
+              <a href="#" class="active">Dashboard</a>
+            </li>
+            <li>
+              <a href="#">Account details</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- END BREADCRUMBS -->
+      <!-- BEGIN USER DASH SECTION -->
+      <section id="box_user_dashboard">
+        <div class="row">
+          <div class="box_user">
+            <div class="general_box">
+              <h4>Hi Username!</h4>
+              <p>From your account dashboard you can view your recent orders, manage your shipping and billing addresses, and edit your password and account details.</p>
+            </div>
+
+            <div class="general_box">
+              <h4>Last orders</h4>
+              <div class="list_products">
+                <!-- BEGIN TOP -->
+                <div class="top">
+                  <div class="box">
+                    <div class="tittle">Product</div>
+                  </div>
+                  <div class="box">
+                    <div class="tittle">Date</div>
+                  </div>
+                  <div class="box">
+                    <div class="tittle">State</div>
+                  </div>
+                  <div class="box">
+                    <div class="tittle">Total</div>
+                  </div>
+                  <div class="box">
+                    <div class="tittle">Actions</div>
+                  </div>
+                </div>
+                <!-- END TOP -->
+                <!-- BEGIN RESULT -->
+                <div class="result">
+                  <div class="box">
+                    <div class="price">#1087</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">10 October, 2018</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">Waiting</div>
+                  </div>
+                  <div class="box">
+                    <div class="price bold">$100.00</div>
+                    <div class="description">2 product´s</div>
+                  </div>
+                  <div class="box">
+                    <button class="btn_small">Vew order</button>
+                  </div>
+                </div>
+                <!-- END RESULT -->
+                <!-- BEGIN RESULT -->
+                <div class="result">
+                  <div class="box">
+                    <div class="price">#1087</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">10 October, 2018</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">Waiting</div>
+                  </div>
+                  <div class="box">
+                    <div class="price bold">$100.00</div>
+                    <div class="description">2 product´s</div>
+                  </div>
+                  <div class="box">
+                    <button class="btn_small">Vew order</button>
+                  </div>
+                </div>
+                <!-- END RESULT -->
+                <!-- BEGIN RESULT -->
+                <div class="result">
+                  <div class="box">
+                    <div class="price">#1087</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">10 October, 2018</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">Waiting</div>
+                  </div>
+                  <div class="box">
+                    <div class="price bold">$100.00</div>
+                    <div class="description">2 product´s</div>
+                  </div>
+                  <div class="box">
+                    <button class="btn_small">Vew order</button>
+                  </div>
+                </div>
+                <!-- END RESULT -->
+                <!-- BEGIN RESULT -->
+                <div class="result">
+                  <div class="box">
+                    <div class="price">#1087</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">10 October, 2018</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">Waiting</div>
+                  </div>
+                  <div class="box">
+                    <div class="price bold">$100.00</div>
+                    <div class="description">2 product´s</div>
+                  </div>
+                  <div class="box">
+                    <button class="btn_small">Vew order</button>
+                  </div>
+                </div>
+                <!-- END RESULT -->
+                <!-- BEGIN RESULT -->
+                <div class="result">
+                  <div class="box">
+                    <div class="price">#1087</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">10 October, 2018</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">Waiting</div>
+                  </div>
+                  <div class="box">
+                    <div class="price bold">$100.00</div>
+                    <div class="description">2 product´s</div>
+                  </div>
+                  <div class="box">
+                    <button class="btn_small">Vew order</button>
+                  </div>
+                </div>
+                <!-- END RESULT -->
+                <!-- BEGIN RESULT -->
+                <div class="result">
+                  <div class="box">
+                    <div class="price">#1087</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">10 October, 2018</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">Waiting</div>
+                  </div>
+                  <div class="box">
+                    <div class="price bold">$100.00</div>
+                    <div class="description">2 product´s</div>
+                  </div>
+                  <div class="box">
+                    <button class="btn_small">Vew order</button>
+                  </div>
+                </div>
+                <!-- END RESULT -->
+                <!-- BEGIN RESULT -->
+                <div class="result">
+                  <div class="box">
+                    <div class="price">#1087</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">10 October, 2018</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">Waiting</div>
+                  </div>
+                  <div class="box">
+                    <div class="price bold">$100.00</div>
+                    <div class="description">2 product´s</div>
+                  </div>
+                  <div class="box">
+                    <button class="btn_small">Vew order</button>
+                  </div>
+                </div>
+                <!-- END RESULT -->
+                <!-- BEGIN RESULT -->
+                <div class="result">
+                  <div class="box">
+                    <div class="price">#1087</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">10 October, 2018</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">Waiting</div>
+                  </div>
+                  <div class="box">
+                    <div class="price bold">$100.00</div>
+                    <div class="description">2 product´s</div>
+                  </div>
+                  <div class="box">
+                    <button class="btn_small">Vew order</button>
+                  </div>
+                </div>
+                <!-- END RESULT -->
+                <!-- BEGIN RESULT -->
+                <div class="result">
+                  <div class="box">
+                    <div class="price">#1087</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">10 October, 2018</div>
+                  </div>
+                  <div class="box">
+                    <div class="name">Waiting</div>
+                  </div>
+                  <div class="box">
+                    <div class="price bold">$100.00</div>
+                    <div class="description">2 product´s</div>
+                  </div>
+                  <div class="box">
+                    <button class="btn_small">Vew order</button>
+                  </div>
+                </div>
+                <!-- END RESULT -->
+              </div>
+            </div>
+          </div>
+          <div id="sidebar">
+            <!-- BEGIN PURCHASE HISTORY -->
+            <div class="full_box">
+              <h5>Purchase History</h5>
+              <div class="box_result">
+                <a href="#" class="product_single_element">
+                  <div class="img">
+                    <img src="img/products/cart/product_aside_01@2x.jpg" alt="Name Product">
+                  </div>
+                  <div class="name">Rathlee Golden Rum</div>
+                  <div class="line"></div>
+                  <div class="price">£27.95</div>
+                </a>
+                <a href="#" class="product_single_element">
+                  <div class="img">
+                    <img src="img/products/cart/product_aside_02@2x.jpg" alt="Name Product">
+                  </div>
+                  <div class="name">Rathlee Golden Rum</div>
+                  <div class="line"></div>
+                  <div class="price">£27.95</div>
+                </a>
+                <a href="#" class="product_single_element">
+                  <div class="img">
+                    <img src="img/products/cart/product_aside_03@2x.jpg" alt="Name Product">
+                  </div>
+                  <div class="name">Rathlee Golden Rum</div>
+                  <div class="line"></div>
+                  <div class="price">£27.95</div>
+                </a>
+                <a href="#" class="product_single_element">
+                  <div class="img">
+                    <img src="img/products/cart/product_aside_04@2x.jpg" alt="Name Product">
+                  </div>
+                  <div class="name">Rathlee Golden Rum</div>
+                  <div class="line"></div>
+                  <div class="price">£27.95</div>
+                </a>
+                <a href="#" class="product_single_element">
+                  <div class="img">
+                    <img src="img/products/cart/product_aside_05@2x.jpg" alt="Name Product">
+                  </div>
+                  <div class="name">Rathlee Golden Rum</div>
+                  <div class="line"></div>
+                  <div class="price">£27.95</div>
+                </a>
+                <a href="#" class="product_single_element">
+                  <div class="img">
+                    <img src="img/products/cart/product_aside_06@2x.jpg" alt="Name Product">
+                  </div>
+                  <div class="name">Rathlee Golden Rum</div>
+                  <div class="line"></div>
+                  <div class="price">£27.95</div>
+                </a>
+                <a href="#" class="product_single_element">
+                  <div class="img">
+                    <img src="img/products/cart/product_aside_07@2x.jpg" alt="Name Product">
+                  </div>
+                  <div class="name">Rathlee Golden Rum</div>
+                  <div class="line"></div>
+                  <div class="price">£27.95</div>
+                </a>
+                <a href="#" class="product_single_element">
+                  <div class="img">
+                    <img src="img/products/cart/product_aside_08@2x.jpg" alt="Name Product">
+                  </div>
+                  <div class="name">Rathlee Golden Rum</div>
+                  <div class="line"></div>
+                  <div class="price">£27.95</div>
+                </a>
+                <button class="btn_small_gray">View more</button>
+              </div>
+            </div>
+            <!-- END RELATED PRODUCTS -->
+          </div>
+        </div>
+      </section>
+      <!-- END USER DASH SECTION -->
+
+
+
+
+
+
+
+
+
+
+
+      <!-- BEGIN LATEST OFFERS -->
+      <section id="box_latest_offers">
+        <div class="row">
+          <div class="box">
+            <p>Sign up for our latest offers and news</p>
+            <form>
+              <input placeholder="Enter your email address" type="text" name="" value="">
+              <button class="btn_medium" type="button" name="button">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- END LATEST OFFERS -->
+      <!-- BEGIN FOOTER -->
+      <footer>
+        <div class="row">
+          <div class="box">
+            <a href="#" id="logo_footer">
+              <img src="img/logos/logo_whisky_international_online.svg" alt="Whisky Internationa Online" />
+            </a>
+            <div class="legal">© 2018 Registered in Scotland Company No. SC525402 VAT No. 256 6432 90.</div>
+          </div>
+          <div class="box">
+            <h6>We Accept</h6>
+            <ul class="payment_method">
+              <li>
+                <div class="logo">
+                  <img src="img/payment/paypal@2x.jpg" alt="PayPal Logo">
+                </div>
+              </li>
+              <li>
+                <div class="logo">
+                  <img src="img/payment/visa@2x.jpg" alt="Visa Logo">
+                </div>
+              </li>
+              <li>
+                <div class="logo">
+                  <img src="img/payment/mastercard@2x.jpg" alt="Mastercard Logo">
+                </div>
+              </li>
+              <li>
+                <div class="logo">
+                  <img src="img/payment/maestro@2x.jpg" alt="Maestro Logo">
+                </div>
+              </li>
+              <li>
+                <div class="logo">
+                  <img src="img/payment/jcb@2x.jpg" alt="JCB Logo">
+                </div>
+              </li>
+              <li>
+                <div class="big_logo">
+                  <img src="img/payment/wordlpay@2x.jpg" alt="Wordlpay Logo">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="box">
+            <div class="result">
+              <h6>More Access</h6>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+            <div class="result">
+              <h6>Social</h6>
+              <aside>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="img/social/facebook.svg" alt="Facebook icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/social/instagram.svg" alt="Instagram icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/social/twitter.svg" alt="Twitter icon">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/social/google_plus.svg" alt="Google Plus icon">
+                    </a>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+          <div class="box">
+            <div class="secure_payment">
+              <img src="img/elements/secure_payment@2x.png" alt="Secure payment">
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- END FOOTER -->
+
+
+
+
+
+      <script type="text/javascript" src="js/app.js"></script>
+
+  	</body>
+</html>

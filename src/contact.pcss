@@ -1,0 +1,100 @@
+/* BEGIN CONTACT */
+#box_contact {
+  float: left;
+  width: 100vw;
+  @media (--mobile) {
+    padding: 80px 0;
+  }
+  @media (--tabletport) {
+    padding: 80px 0 0;
+  }
+  .box {
+    @media (--mobile) {
+      lost-column: 1/1;
+    }
+    @media (--tabletport) {
+      lost-column: 1/2;
+    }
+  }
+  .info {
+    float: left;
+    @media (--mobile) {
+      width: 100%;
+      margin: 0;
+    }
+    @media (--tabletport) {
+      width: calc(100% - 30px);
+      margin: 0 0 0 30px;
+    }
+    @media (--tabletland) {
+      width: calc(100% - 50px);
+      margin: 0 0 0 50px;
+    }
+    @media (--desktop) {
+      width: calc(100% - 70px);
+      margin: 0 0 0 70px;
+    }
+  }
+  .result {
+    float: left;
+    width: 100%;
+    margin: 0 0 15px;
+    &:last-column {
+      margin: 0;
+    }
+  }
+  .icon {
+    float: left;
+    width: 25px;
+    margin: 0 15px 0 0;
+  }
+  p {
+    width: calc(100% - 25px - 15px);
+  }
+  a {
+    color: var(--gris);
+    text-decoration: none;
+    transition: var(--animacion);
+    &:hover {
+      @media (--tabletland) {
+        color: var(--dorado);
+      }
+    }
+  }
+  form {
+    float: left;
+    background: var(--blanco);
+    position: relative;
+    z-index: 1;
+    @media (--mobile) {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    @media (--tabletport) {
+      width: calc(100% - 60px);
+      padding: 30px;
+      margin: 50px 0 -60px;
+    }
+    @media (--tabletland) {
+      width: calc(100% - 60px);
+      padding: 30px;
+      margin: 60px 0 -80px;
+    }
+    .box {
+      @media (--mobile) {
+        lost-column: 1/1;
+      }
+      @media (--tabletland) {
+        lost-column: 1/2;
+      }
+    }
+    .box_input {
+      margin: 0 0 30px;
+    }
+    .btn_small {
+      width: 170px;
+    }
+  }
+}
+/* END CONTACT */

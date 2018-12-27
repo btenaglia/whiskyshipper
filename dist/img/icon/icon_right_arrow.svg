@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_right_arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UiKit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M2.85714286,6.1327046 L-0.923495156,2.35206658 C-1.20244108,2.07312066 -1.65470178,2.07312066 -1.9336477,2.35206658 C-2.21259362,2.63101251 -2.21259362,3.08327321 -1.9336477,3.36221913 L2.35206658,7.64793342 C2.63101251,7.92687934 3.08327321,7.92687934 3.36221913,7.64793342 L7.64793342,3.36221913 C7.92687934,3.08327321 7.92687934,2.63101251 7.64793342,2.35206658 C7.36898749,2.07312066 6.91672679,2.07312066 6.63778087,2.35206658 L2.85714286,6.1327046 Z" id="icon_right_arrow" fill="#FFFFFF" fill-rule="nonzero" transform="translate(2.857143, 5.000000) rotate(-90.000000) translate(-2.857143, -5.000000) "></path>
+    </g>
+</svg>

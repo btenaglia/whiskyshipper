@@ -1,0 +1,342 @@
+/* BEGIN CHECKOUT */
+#box_checkout {
+  margin-top: 7px;
+  @media (--mobile) {
+    lost-column: 1/1;
+  }
+  @media (--tabletland) {
+    lost-column: 8/12;
+  }
+  h4 {
+    padding: 0 0 16px;
+  }
+}
+#box_coupon {
+  cursor: pointer;
+  float: left;
+  background: var(--dorado);
+  @media (--mobile) {
+    width: calc(100% - 30px);
+    padding: 12px 15px;
+    margin: 40px 0;
+  }
+  @media (--tabletland) {
+    width: calc(100% - 40px);
+    padding: 13px 20px;
+    margin: 50px 0;
+  }
+  @media (--desktop) {
+    padding: 15px 20px;
+    margin: 90px 0 50px;
+  }
+  b {
+    float: left;
+    width: 100%;
+    font-weight: var(--black);
+    color: var(--blanco);
+    letter-spacing: 0;
+    @mixin ShoppingCartText {};
+  }
+}
+#box_insourance {
+  @mixin CheckoutBox {};
+  input {
+    float: left;
+    width: 12px;
+    margin: 7px 10px 0 0;
+  }
+  p {
+    float: left;
+    width: calc(100% - 12px - 10px);
+  }
+}
+#box_billing_detail {
+  @mixin CheckoutBox {};
+  .box {
+    @media (--mobile) {
+      lost-column: 1/1;
+    }
+    @media (--tabletport) {
+      lost-column: 1/2;
+    }
+  }
+  h4 {
+    @media (--mobile) {
+      margin: 0 0 15px;
+    }
+    @media (--tabletport) {
+      margin: 0 0 20px;
+    }
+  }
+}
+.box_input {
+  float: left;
+  width: 100%;
+  position: relative;
+  @media (--mobile) {
+    margin: 0 0 18px;
+  }
+  @media (--desktop) {
+    margin: 0 0 20px;
+  }
+  label {
+    float: left;
+    width: 100%;
+    font-weight: var(--light);
+    line-height: 0.8;
+    color: var(--grismedio);
+    letter-spacing: 0;
+    @media (--mobile) {
+      font-size: 13px;
+      margin: 0 0 8px;
+    }
+    @media (--tabletport) {
+      font-size: 14px;
+    }
+    @media (--tabletland) {
+      font-size: 15px;
+      margin: 0 0 9px;
+    }
+    @media (--desktop) {
+      font-size: 16px;
+      margin: 0 0 10px;
+    }
+  }
+  input {
+    @mixin InputForm {};
+  }
+  textarea {
+    min-height: 80px;
+    @mixin InputForm {};
+  }
+  .select {
+    cursor: pointer;
+    float: left;
+    width: 100%;
+    position: relative;
+    line-height: 0.8;
+    color: var(--gris);
+    font-weight: var(--light);
+    letter-spacing: 0;
+    border: 0 none;
+    border-bottom: 1px solid var(--grisclaro);
+    outline: none;
+    transition: var(--animacion);
+    @media (--mobile) {
+      font-size: 14px;
+      padding: 6px 0 8px;
+    }
+    @media (--tabletland) {
+      font-size: 15px;
+      padding: 6px 0 10px;
+    }
+    @media (--desktop) {
+      font-size: 16px;
+      padding: 6px 0 12px;
+    }
+    &:hover {
+      @media (--tabletland) {
+        color: var(--negro);
+        border-bottom: 1px solid var(--naranja);
+      }
+    }
+    &.active {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+    img {
+      position: absolute;
+      right: 0;
+      transition: var(--animacion);
+      @media (--mobile) {
+        top: 12px;
+        width: 8px;
+      }
+      @media (--desktop) {
+        top: 13px;
+        width: 10px;
+      }
+    }
+  }
+  .select_result {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: calc(100% - 20px);
+    padding: 5px 10px;
+    z-index: 5;
+    background: var(--blanco);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    @media (--mobile) {
+      top: 43px;
+    }
+    @media (--tabletport) {
+      top: 44px;
+    }
+    @media (--tabletland) {
+      top: 46px;
+    }
+    @media (--desktop) {
+      top: 47px;
+    }
+    ul {
+      float: left;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      float: left;
+      width: 100%;
+      list-style: none;
+    }
+    div {
+      cursor: pointer;
+      float: left;
+      width: 100%;
+      font-weight: var(--light);
+      color: var(--grismedio);
+      transition: var(--animacion);
+      @mixin ShoppingCartText {};
+      &:hover {
+        @media (--tabletland) {
+          color: var(--dorado);
+        }
+      }
+    }
+  }
+}
+#box_difderent_address {
+  @mixin CheckoutBox {};
+  button {
+    float: left;
+    width: 100%;
+    border: 0 none;
+    background: none;
+    padding: 0;
+    text-align: left;
+    position: relative;
+    outline: none;
+  }
+  input {
+    position: absolute;
+    right: 0;
+    top: 5px;
+  }
+  h4 {
+    border-bottom: 1px solid var(--negro);
+  }
+}
+#box_order_notes {
+  @mixin CheckoutBox {};
+}
+#box_order {
+  @mixin CheckoutBox {};
+  h4 {
+    border-bottom: 1px solid var(--negro);
+  }
+  .top {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--negro);
+  }
+  .box {
+    lost-column: 1/2;
+  }
+  .result {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid var(--grisclaro);
+    @media (--mobile) {
+      padding: 10px 0;
+    }
+    @media (--tabletland) {
+      padding: 15px 0;
+    }
+    @media (--desktop) {
+      padding: 20px 0;
+    }
+    &:last-child {
+      border-bottom: 0 none;
+    }
+  }
+  b {
+    font-weight: var(--black);
+    color: var(--dorado);
+    @mixin ShoppingCartText {};
+  }
+}
+#box_payment {
+  float: left;
+  width: 100%;
+  .btn_small {
+    width: 270px;
+  }
+}
+#box_order_result {
+  float: left;
+  width: 100%;
+  margin: 60px 0;
+  .top {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--negro);
+  }
+  .box {
+    lost-column: 1/3;
+  }
+  .result {
+    float: left;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--grisclaro);
+    &:last-child {
+      border-bottom: 0 none;
+    }
+  }
+  h4 {
+    border-bottom: 1px solid var(--negro);
+  }
+  b {
+    float: left;
+    width: 100%;
+    color: var(--dorado);
+    @media (--mobile) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+    @media (--tabletport) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    @media (--tabletland) {
+      font-size: 15px;
+      line-height: 25px;
+    }
+    @media (--desktop) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}
+#box_custom_detail,
+#box_thanks_adress{
+  float: left;
+  width: 100%;
+  margin: 0 0 60px;
+  .box {
+    @media (--mobile) {
+      lost-column: 1/1;
+    }
+    @media (--tabletport) {
+      lost-column: 1/2;
+    }
+  }
+  h4 {
+    margin: 0 0 15px;
+  }
+}
+/* END CHECKOUT */

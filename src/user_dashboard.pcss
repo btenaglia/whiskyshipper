@@ -1,0 +1,110 @@
+/* BEGIN USER DASHBOARD */
+#box_user_dashboard {
+  float: left;
+  width: 100vw;
+  padding: 80px 0;
+  .box_user {
+    @media (--mobile) {
+      lost-column: 1/1;
+    }
+    @media (--tabletland) {
+      lost-column: 8/12;
+    }
+  }
+  .general_box {
+    float: left;
+    width: 100%;
+    margin: 0 0 70px;
+  }
+  h4 {
+    margin: 3px 0 10px;
+  }
+  .list_products {
+    float: left;
+    width: 100%;
+    .top {
+      float: left;
+      width: 100%;
+      padding: 0 0 10px;
+      border-bottom: 1px solid var(--dorado);
+      @media (--mobile) {
+        display: none;
+      }
+      @media (--tabletport) {
+        display: block;
+      }
+    }
+    .box {
+      @media (--mobile) {
+        lost-column: 1/1;
+      }
+      @media (--tabletport) {
+        lost-column: 1/5;
+      }
+    }
+    .tittle {
+      font-weight: var(--black);
+      font-size: 14px;
+      line-height: 0.8;
+      color: var(--dorado);
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .result {
+      float: left;
+      width: 100%;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--grisclaro);
+      &:last-child {
+        border-bottom: 0 none;
+      }
+    }
+    .bold {
+      font-weight: var(--bold) !important;
+    }
+    .price {
+      text-align: left !important;
+      color: var(--dorado) !important;
+      @mixin TextAboutUs {};
+    }
+    .name {
+      text-align: left !important;
+      @mixin TextAboutUs {};
+    }
+    .description {
+      float: left;
+      width: 100%;
+      font-weight: var(--regular);
+      font-size: 13px;
+      line-height: 1.2;
+      color: var(--gris);
+      letter-spacing: 0;
+    }
+    .btn_small {
+      width: 100%;
+    }
+  }
+  .box_form {
+    float: left;
+    width: 100%;
+    margin: 20px 0 0;
+  }
+  .box_input {
+    margin-bottom: 20px;
+    @media (--mobile) {
+      lost-column: 1/1;
+    }
+    @media (--tabletport) {
+      lost-column: 1/2;
+    }
+  }
+  .btn_small {
+    @media (--mobile) {
+      width: 100%;
+    }
+    @media (--tabletport) {
+      width: 270px;
+    }
+  }
+}
+/* END USER DASHBOARD */

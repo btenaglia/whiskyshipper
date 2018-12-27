@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow_dropdown_delivery</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UiKit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M5,3.98984746 L1.21936199,0.209209442 C0.940416064,-0.0697364807 0.488155365,-0.0697364807 0.209209442,0.209209442 C-0.0697364807,0.488155365 -0.0697364807,0.940416064 0.209209442,1.21936199 L4.49492373,5.50507627 C4.77386965,5.78402219 5.22613035,5.78402219 5.50507627,5.50507627 L9.79079056,1.21936199 C10.0697365,0.940416064 10.0697365,0.488155365 9.79079056,0.209209442 C9.51184464,-0.0697364807 9.05958394,-0.0697364807 8.78063801,0.209209442 L5,3.98984746 Z" id="arrow_dropdown_delivery" fill="#F0D2A3" fill-rule="nonzero"></path>
+    </g>
+</svg>
