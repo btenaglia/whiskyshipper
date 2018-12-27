@@ -1239,12 +1239,19 @@ img {
   float: left;
   width: 100vw;
   background: var(--dorado);
-  @mixin MarginTopSection {};
   @media (--mobile) {
     padding: 5px 0;
+    margin: 175px 0 0;
   }
   @media (--tabletport) {
     padding: 10px 0;
+    margin: 274px 0 0;
+  }
+  @media (--tabletland) {
+    margin: 304px 0 0;
+  }
+  @media (--desktop) {
+    margin: 333px 0 0;
   }
   ul {
     float: left;
@@ -1321,10 +1328,15 @@ img {
         display: block;
         position: absolute;
         left: 0;
-        bottom: -10px;
         background: var(--negro);
         width: 0;
         height: 4px;
+        @media (--mobile) {
+          bottom: -5px;
+        }
+        @media (--tabletport) {
+          bottom: -10px;
+        }
       }
     }
   }
