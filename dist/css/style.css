@@ -3713,7 +3713,9 @@ article .box_info {
 
   .btn{
     font-size: 15px;
-    width: 100%;
+    width: -webkit-calc(100% - 20px);
+    width: -moz-calc(100% - 20px);
+    width: calc(100% - 20px);
     padding: 12px 10px;
   }
 
@@ -3978,7 +3980,7 @@ article .box_info {
   }
 
   .tittle_banner .description{
-    font-size: 35px;
+    font-size: 30px;
   }
 
   #banners_home{
@@ -6413,7 +6415,7 @@ article .box_info {
   }
 
   .tittle_banner .description{
-    font-size: 40px;
+    font-size: 30px;
   }
 
   #banners_home .big_box{
@@ -7971,9 +7973,6 @@ article .box_info {
 
   .btn{
     font-size: 17px;
-    width: -webkit-calc(100% - 20px);
-    width: -moz-calc(100% - 20px);
-    width: calc(100% - 20px);
   }
 
   .btn:hover{
@@ -8169,7 +8168,7 @@ article .box_info {
   }
 
   .tittle_banner .description{
-    font-size: 48px;
+    font-size: 40px;
   }
 
   #banners_home{
@@ -9614,9 +9613,6 @@ article .box_info {
 
   .btn{
     font-size: 18px;
-    width: -webkit-calc(100% - 20px);
-    width: -moz-calc(100% - 20px);
-    width: calc(100% - 20px);
     padding: 14px 10px;
   }
 
@@ -9753,7 +9749,7 @@ article .box_info {
   }
 
   .tittle_banner .tittle{
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .tittle_banner .description{
@@ -9798,7 +9794,7 @@ article .box_info {
   }
 
   .cuckoo .text{
-    font-size: 21px;
+    font-size: 19px;
   }
 
   .product_single_element .name{
